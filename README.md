@@ -1,4 +1,3 @@
-#Amazon Price API
 This is a php script that fetch the price of any amazon.com product you are asking.
 It's using a python script for the get request and then search by ID to "isolate" the price and print it.
 The code is really easy to understand and is only here for demonstration purpose, there is no security test and many error / exploit are possible.
