@@ -1,7 +1,7 @@
-## Amazon Price API
+# Amazon Price API
 PHP script that fetch the price of any amazon product.
 
-# Example
+## Example
 ```
 https://localhost/index.php?link={ASIN}
 ```
