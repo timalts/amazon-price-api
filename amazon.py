@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import sys
+import json
 
 URL = sys.argv[1]
 headers = {
@@ -18,5 +19,5 @@ headers = {
 page = requests.get(URL, headers=headers)
 soup = BeautifulSoup(page.content, 'html.parser')
 html = str(soup)
-
-print(soup.find(id='priceblock_ourprice').get_text().strip())
+price = soup.find(id='priceblock_ourprice').get_text().strip()
+print(json.loads('{"price": "' + price + '"}'))
